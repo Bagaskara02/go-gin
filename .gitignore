@@ -1,0 +1,85 @@
+# ==========================================
+# Go API Project - Git Ignore
+# ==========================================
+
+# ---- Environment & Secrets ----
+.env
+*.env
+!.env.example
+
+# ---- Database ----
+*.sql.bak
+*.sql.backup
+dump.sql
+*.db
+*.sqlite3
+
+# ---- Go Build & Binaries ----
+# Compiled binaries
+*.exe
+*.bin
+*.dll
+*.so
+*.dylib
+
+# Build artifacts
+/bin/
+/pack/
+/dist/
+/build/
+/out/
+/tmp/
+
+# Go specific
+*.test
+*.out
+coverage.*
+*.cover
+coverage.html
+htmlcov/
+
+# ---- IDE & Editors ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+*.rej
+.DS_Store
+Thumbs.db
+
+# ---- Logs & Temporary ----
+*.log
+*.tmp
+*.temp
+*.pid
+*.lock
+*.lck
+
+# ---- OS ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ---- Testing & Coverage ----
+test-results/
+*.junit
+*.xml
+*.coverage
+*.cov
+
+# ---- Dependencies (uncomment if not using go modules properly) ----
+# vendor/
+
+# ---- Local configuration ----
+config.local.yml
+config.local.yaml
+config.local.json
+secrets/
+private/
